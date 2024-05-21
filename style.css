@@ -9,125 +9,233 @@ body {
 }
 
 
-/*Spotify TOP*/
-
-.mainbox {
-    height: calc(100vh - 90px);
+ul{
+    list-style-type: none;
 }
 
-
-.colonna {
-    width: 50px;
-    flex-shrink: 0;
-    padding: 5px 0;
-    background-color: #000000;
+a{
+    text-decoration: none;
 }
 
-.img {
+.inline-block{
+    display: inline-block;
+}
+
+.margin20{
+    margin: 20px;
+}
+
+.margin-bottom20{
+    margin-bottom: 20px;
+}
+
+.border{
+    border-left: 3px solid lime;
+}
+
+.border2{
+    border-bottom: 3px solid lime;
+}
+
+/*MAIN*/
+
+.container{
     width: 100%;
-    display: block;
+    height: 100vh;
 }
 
-.flexbox {
+.boxflex{
+    width: 100vw;
+    height: calc(100vh - 100px);
     display: flex;
-}
-
-.flexcolonna {
-    display: flex;
-    flex-direction: column;
-}
-
-/*logo*/
-
-.logo .logotipo.img.froms {
-    display: none;
-}
-
-.logo .logosmall.img.onlyxs {
-    display: flex;
-}
-
-.logo .logotipo {
-    width: 130px;
-}
-
-.logo .logosmall {
-    width: 30px;
-    margin: 0 auto;
-    margin-bottom: 10px
-}
-
-
-/*menu*/
-
-
-ul.menu li a.botton {
-    color: #a3a3a3;
-}
-
-.colonna ul.menu > li a.botton {
-    border-left: 2px solid transparent;
-}
-
-.menu li a img {
-    width: 25px;
-}
-
-.menu li .botton h5.froms,
-.account .userimage h3.froms {
-    display: none;
-}
-
-ul.menu li a > img {
-    padding-bottom: 10px;
-}
-
-.colonna li.active {
-    border-left: 2px solid #adff2f;
-}
-.account > div.download, div.userimage {
-    padding: 10px 0;
-}
-
-.menu li a.botton,
-.account .download a.botton.flexbox,
-.account .userimage .flexbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.playlist.froms {
-    display: none;
     overflow: hidden;
 }
 
-.playlist ul.list {
+/*SIDEBAR*/
+
+.sidebar{
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topsidebar{
+    width: 100%;
+    height: 500px;
+}
+
+.bottomsidebar{
+    width: 100%;
+    background-color: black;
+}
+
+/* LOGO */
+
+.logo{
+    width: 100%;
+    height: 100px;
+    border: 1px dashed black;
+    display: block;
+}
+
+.logo1{
+    margin: 20px;
+    width: 150px;
+}
+
+.smalllogo{
+    display: none;
+    text-align: center;
+}
+
+.w-small-logo{
+    width: 30px;
+    margin: 5px;
+}
+
+/* MENU*/
+
+.menu{
+    width: 100%;
+}
+
+.menu ul{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.icon-svg{
+    width: 30px;
+    margin: 5px;
+    margin-left: 20px;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(11%) saturate(11%) hue-rotate(345deg) brightness(84%) contrast(82%);
+}
+
+.icon-svg:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(114deg) brightness(101%) contrast(102%);
+}
+
+.icon-svg2:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+}
+
+.menu span{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#homewhite{
+    color: white;
+    font-weight: bold;
+}
+
+.color-g{
+    color: rgb(163, 163, 163);
+}
+
+.color-g:hover{
+    color: white;
+}
+
+
+.menu li{
+    position: relative;
+}
+
+
+/*PLAYLIST*/
+
+.playlist{
+    width: 100%;
+    height: 40vh;
     overflow-y: auto;
 }
-/* /Sidenav: top */
 
-/* Sidenav: bottom */
-.account .download a.botton img {
-    width: 18px;
+.playlist h4{
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
-.account hr.froms {
-    display: none;
+.playlist a{
+    margin-left: 20px;
+    color:rgb(163, 163, 163);
+    font-weight: 700;
 }
 
-.account {
-    margin-top: auto;
+.playlist li{
+    line-height: 35px;
 }
 
-.account .download .botton h5.froms {
-    display: none;
+.playlist i{
+    font-size: 50px;
 }
 
-.account .userimage img.img {
-    border-radius: 50px;
-    background-color:#808080;
-    width: 25px;
-    height: 25px;
+.plus{
+    position: relative;
+    margin-bottom: 10px;
 }
 
+.plus span{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 10px;
+}
+
+
+/*INSTALL-USER*/
+
+
+.install-user{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.install-user i{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.install-user h3{
+    color: white;
+    margin-left: 20px;
+}
+
+.install-user hr{
+    color: white;
+    width: 215px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+#user{
+    font-size: 40px;
+}
+
+#user-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+#installa-app{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+#jonh{
+    position: relative;
+}
+
+#install{
+    margin-bottom: 10px;
+    position: relative;
+}
