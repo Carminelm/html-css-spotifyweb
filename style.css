@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    letter-spacing: -0.5px;
 }
 
 
@@ -44,7 +43,7 @@ body {
     display: none;
 }
 
-.logo .logosmall.img.only-xs {
+.logo .logosmall.img.onlyxs {
     display: flex;
 }
 
@@ -58,4 +57,77 @@ body {
     margin-bottom: 10px
 }
 
+
+/*menu*/
+
+
+ul.menu li a.botton {
+    color: #a3a3a3;
+}
+
+.colonna ul.menu > li a.botton {
+    border-left: 2px solid transparent;
+}
+
+.menu li a img {
+    width: 25px;
+}
+
+.menu li .botton h5.froms,
+.account .userimage h3.froms {
+    display: none;
+}
+
+ul.menu li a > img {
+    padding-bottom: 10px;
+}
+
+.colonna li.active {
+    border-left: 2px solid #adff2f;
+}
+.account > div.download, div.userimage {
+    padding: 10px 0;
+}
+
+.menu li a.botton,
+.account .download a.botton.flexbox,
+.account .userimage .flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playlist.froms {
+    display: none;
+    overflow: hidden;
+}
+
+.playlist ul.list {
+    overflow-y: auto;
+}
+/* /Sidenav: top */
+
+/* Sidenav: bottom */
+.account .download a.botton img {
+    width: 18px;
+}
+
+.account hr.froms {
+    display: none;
+}
+
+.account {
+    margin-top: auto;
+}
+
+.account .download .botton h5.froms {
+    display: none;
+}
+
+.account .userimage img.img {
+    border-radius: 50px;
+    background-color:#808080;
+    width: 25px;
+    height: 25px;
+}
 
