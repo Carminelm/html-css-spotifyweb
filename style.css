@@ -239,3 +239,83 @@ a{
     margin-bottom: 10px;
     position: relative;
 }
+
+/*MUSIC*/
+
+.music{
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: #141922;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar{
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: #080b1275;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.boxbutton{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #000000;
+}
+
+.upgrade{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.button{
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: 2px solid white;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    transform: translate(0%, -50%);
+    border-radius: 25px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .6s;
+}
+
+.zoom{
+    transform: scale(1);
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.content-musical-artist h2{
+    color: white;
+}
+
+.content-musical-artist h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content-musical-artist p{
+    text-align: center;
+    color:rgb(163, 163, 163);
+}
+
+#text-left, #text-left2{
+    text-align: left;
+    margin-bottom: 30px;
+}
