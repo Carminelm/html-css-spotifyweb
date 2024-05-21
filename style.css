@@ -300,17 +300,17 @@ a{
     transform: scale(1.2);
 }
 
-.content-musical-artist h2{
+.content-artist h2{
     color: white;
 }
 
-.content-musical-artist h3{
+.content-artist h3{
     color: white;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.content-musical-artist p{
+.content-artist p{
     text-align: center;
     color:rgb(163, 163, 163);
 }
@@ -319,3 +319,83 @@ a{
     text-align: left;
     margin-bottom: 30px;
 }
+
+.content-artist{
+    overflow-y: auto;
+    padding-top: 130px;
+    height: 100%;
+}
+
+.navcenter{
+    text-align: center;
+}
+
+.item-nav-link{
+    margin-right: 25px;
+}
+
+.item-recently-played{
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.album img{
+    max-width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.album-flex{
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 20px;
+    margin-bottom: 100px;
+}
+
+.album{
+    width: calc(100% / 6 - 20px);
+    margin-right: 20px;
+}
+
+.albumimg{
+    position: relative;
+}
+
+.albumimg:hover .play{
+    opacity: 1;
+}
+
+.play{
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    opacity: 0;
+}
+
+.albumimg:hover .play-circle{
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.image-circle{
+    border-radius: 50%;
+}
+
+.navcenter a{
+    color:rgb(163, 163, 163);
+    font-weight: 700;
+}
+
+.navcenter ul{
+    margin-bottom: 50px;
+}
+
