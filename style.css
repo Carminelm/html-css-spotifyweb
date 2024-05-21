@@ -21,6 +21,10 @@ a{
     display: inline-block;
 }
 
+.flexbox{
+    display: flex;
+}
+
 .margin20{
     margin: 20px;
 }
@@ -244,7 +248,7 @@ a{
 
 .music{
     width: calc(100% - 250px);
-    height: 100%;
+    height: calc(100vh - 100px);
     background-color: #141922;
     display: flex;
     flex-direction: column;
