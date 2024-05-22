@@ -611,3 +611,54 @@ a{
 }
 
 
+
+/*RESPONSITY*/
+
+@media screen and (max-width: 991px) {
+    .album{
+        width: calc(100% / 4 - 20px);
+    }
+
+    .album-flex{
+        flex-wrap: wrap;
+    }
+
+    .colleft, .colright{
+        width: 25%;
+    }
+    
+    .colbig{
+        max-width: 50%;
+    }
+
+    .center-player{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .album{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .album-flex{
+        flex-wrap: wrap;
+    }
+
+    .colleft, .colright{
+        width: 33%;
+    }
+    
+    .colbig{
+        max-width: 33%;
+    }
+
+    .center-player{
+        width: 33%;
+    }
+
+    .iconcenter-bottom{
+        width: 50vw;
+    }
+}
